@@ -1,5 +1,7 @@
 package runnerPackage;
 
+
+
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
@@ -7,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "/Users/rahultiwari/eclipse-workspace/RestAssured.Cucumber.Framework/src/main/java/feature/Customerorder.feature"
+		features = "src/main/java/feature/customerorder.feature"
 				
 		,glue={"stepDefinition"},
 		dryRun =false
@@ -22,7 +24,7 @@ import cucumber.api.junit.Cucumber;
 				//,tags = {"@Regression,@Sanity"} // runs all tagged with sanity and Regression not sanity and regression alone
 		)
 
-public class Runner {
+public class TestRunner {
 	
 	
 
