@@ -12,7 +12,10 @@ import cucumber.api.junit.Cucumber;
 		features = "src/main/java/feature/customerorder.feature"
 				
 		,glue={"stepDefinition"},
-		dryRun =false
+		dryRun =false,
+		 plugin = { "pretty", "html:target/cucumber-reports" },
+		
+		 monochrome = true
 		//,tags = {"@Sanity , @Regression"} // run all scnarioes ABCDE
 		//,tags = {"~@Regression,~@Sanity"} // run only BCDE
 		//,tags = {"@Regression"} // run all tagged with Regression
